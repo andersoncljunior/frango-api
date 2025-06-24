@@ -1,3 +1,6 @@
+console.log("DATABASE_URL =", process.env.DATABASE_URL); // ← Diagnóstico
+require("dotenv").config(); // ← Precisa vir antes de usar process.env
+
 const express = require("express");
 const cors = require("cors");
 const db = require("./db");
